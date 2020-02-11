@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
-    @RequestMapping(value = "/mune", method = RequestMethod.GET)
+    @RequestMapping(value = "/menu", method = RequestMethod.GET)
     public ModelAndView test(HttpServletResponse response, HttpServletRequest request) {
         ModelAndView mv = new ModelAndView("data/menu");
         mv.addObject("messege", "Hello world");
